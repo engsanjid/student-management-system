@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Student - DIU</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dhaka International University</h1>
+    <h2>Add Student</h2>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="add.html" class="active">Add Student</a>
+    <a href="find.html">Find Student</a>
+    <a href="delete.html">Delete Student</a>
+    <a href="display.html">Display All Students</a>
+  </nav>
+
+  <main class="container">
+    <form id="addForm" class="card">
+      <label>First Name</label>
+      <input type="text" id="firstName" placeholder="First Name" required />
+
+      <label>Roll Number</label>
+      <input type="text" id="roll" placeholder="Roll Number" required />
+
+      <label>CGPA</label>
+      <input type="number" id="cgpa" placeholder="CGPA" step="0.01" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© Dhaka International University</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Page specific: attach form handler
+    const addForm = document.getElementById('addForm');
+    if (addForm) addForm.addEventListener('submit', addStudent);
+  </script>
+</body>
+</html>

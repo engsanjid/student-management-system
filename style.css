@@ -1,0 +1,42 @@
+:root{
+  --primary:#004080;
+  --nav:#0066cc;
+  --accent:#28a745;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter, Arial, sans-serif;
+  margin:0;
+  background:#f4f7fb;
+  color:#222;
+}
+header{
+  background:var(--primary);
+  color:#fff;
+  padding:18px 10px;
+  text-align:center;
+}
+header h1{margin:0;font-size:22px}
+header h2{margin:6px 0 0;font-weight:400}
+.nav{
+  background:var(--nav);
+  padding:10px;
+  text-align:center;
+}
+.nav a{
+  color:#fff;text-decoration:none;padding:8px 14px;display:inline-block;margin:0 6px;border-radius:6px
+}
+.nav a.active{background:rgba(0,0,0,0.15)}
+.container{padding:24px;min-height:60vh}
+.card{
+  background:#fff;max-width:720px;margin:12px auto;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,20,30,0.06);
+}
+input, button, select{display:block;width:100%;padding:10px;margin:8px 0;border:1px solid #e0e6ef;border-radius:8px}
+button{background:var(--accent);color:#fff;border:none;cursor:pointer}
+button:hover{opacity:0.95}
+.big-btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none}
+.student-list{list-style:none;padding:0;margin:0}
+.student-list li{padding:10px;border-bottom:1px solid #f0f0f0;cursor:pointer}
+.result{margin-top:12px}
+footer{text-align:center;padding:12px 10px;color:#666}
+@media(min-width:700px){.card{padding:24px}}

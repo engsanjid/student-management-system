@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Students - DIU</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dhaka International University</h1>
+    <h2>All Students</h2>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="add.html">Add Student</a>
+    <a href="find.html">Find Student</a>
+    <a href="delete.html">Delete Student</a>
+    <a href="display.html" class="active">Display All Students</a>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h3>Students List</h3>
+      <ul id="studentList" class="student-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Dhaka International University</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // populate list and make each item clickable to open profile
+    displayStudents()
+    // attach click handlers dynamically from displayAll's rendering
+  </script>
+</body>
+</html>

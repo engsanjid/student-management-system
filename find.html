@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Student - DIU</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Dhaka International University</h1>
+    <h2>Find Student</h2>
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="add.html">Add Student</a>
+    <a href="find.html" class="active">Find Student</a>
+    <a href="delete.html">Delete Student</a>
+    <a href="display.html">Display All Students</a>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h3>Find by Roll</h3>
+      <form id="findRollForm">
+        <input type="text" id="findRoll" placeholder="Enter Roll" required />
+        <button type="submit">Find</button>
+      </form>
+
+      <hr>
+
+      <h3>Find by First Name</h3>
+      <form id="findNameForm">
+        <input type="text" id="findName" placeholder="Enter First Name" required />
+        <button type="submit">Find</button>
+      </form>
+
+      <div id="findResult" class="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Dhaka International University</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const fRoll = document.getElementById('findRollForm');
+    const fName = document.getElementById('findNameForm');
+    if (fRoll) fRoll.addEventListener('submit', findByRoll);
+    if (fName) fName.addEventListener('submit', findByName);
+  </script>
+</body>
+</html>
+_____________________________
